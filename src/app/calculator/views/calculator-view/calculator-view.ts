@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CalculatorComponent } from '@/calculator/components/calculator-component/calculator-component';
+import { CalculatorComponent } from '@/calculator/components/calculator/calculator-component';
 
 @Component({
   selector: 'app-calculator-view',
