@@ -7,4 +7,10 @@ import { CalculatorButton } from '../calculator-button/calculator-button';
   templateUrl: './calculator-component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class CalculatorComponent {}
+export class CalculatorComponent {
+
+	handleClick(key: string) {
+		console.log({key});
+	}
+
+}
