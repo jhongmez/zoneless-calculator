@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CalculatorComponent } from '@/calculator/components/calculator-component/calculator-component';
 
 @Component({
   selector: 'app-calculator-view',
-  imports: [],
+  imports: [CalculatorComponent],
   templateUrl: './calculator-view.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
