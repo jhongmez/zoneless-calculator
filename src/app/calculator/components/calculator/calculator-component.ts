@@ -21,7 +21,7 @@ export class CalculatorComponent {
 	lastOperator = computed( () => this.calculatorService.lastOperator() )
 
 	handleClick(key: string) {
-		console.log({key});
+		this.calculatorService.constructorNumber( key )
 	}
 
 	handleKeyboardEvent( event: KeyboardEvent ) {
@@ -32,8 +32,8 @@ export class CalculatorComponent {
 			Delete: 'C',
 			Backspace: 'C',
 			Enter: '=',
-			'*': 'x',
-			'/': '%',
+			'x': '*',
+			'÷': '/',
 		};
 
 		const key = event.key;
